@@ -1,0 +1,13 @@
+Package: Rcppfor
+Type: Package
+Title: Access Fortran code via Rcpp, C++ and iso_c_binding
+Version: 0.1-1
+Date: 2013-08-21
+Authors@R: c( person("Jean-Michel", "Perraud", email =
+    "jean-michel.perraud@csiro.au", role = c("aut", "cre")))
+Description: Sample code to access to Fortran code via Rcpp, C++ and iso_c_binding
+License: LGPL-2.1
+URL: https://github.com/jmp75/Rcppfor
+Depends: methods, Rcpp (>= 0.10.4)
+LinkingTo: Rcpp
+RcppModules: yada, stdVector, NumEx

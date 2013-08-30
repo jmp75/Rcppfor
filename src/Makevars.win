@@ -2,3 +2,13 @@
 ## Use the R_HOME indirection to support installations of multiple R version
 PKG_LIBS = $(shell "${R_HOME}/bin${R_ARCH_BIN}/Rscript.exe" -e "Rcpp:::LdFlags()")
 PKG_CXXFLAGS= -std=c++0x
+
+# Fortran 90 flags
+#  PKG_FCFLAGS=
+
+# gfortran.exe  -o myfort.dll -shared fortran_api.f90
+
+# PKG_LIBS = -mms-bitfields -mwindows -L"./fortran" -lmyfort
+PKG_LIBS = -L"./fortran" -lmyfort
+
+
